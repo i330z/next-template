@@ -3,10 +3,10 @@ import React from 'react'
 import { signIn, signOut, useSession } from "next-auth/react"
 function LoginBox() {
 
-    const { data: session } = useSession();
+    const { data: session, status } = useSession();
   return (
     <div>
-
+        Status : {status}
         {
             session ? (
                 <div>
