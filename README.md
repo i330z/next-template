@@ -25,6 +25,13 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 To run the docker file :
 
+### Build the docker image:
+
+```shell
+docker build -t next-template . 
+```
+
+### To run the container
 
 For Windows
 ```shell
