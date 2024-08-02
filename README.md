@@ -20,6 +20,27 @@ You can start editing the page by modifying `app/page.js`. The page auto-updates
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
+## For Docker
+
+
+To run the docker file :
+
+
+For Windows
+```shell
+docker run -p 3000:3000 -v "%cd%:/app" -v /app/node_modules next-template
+```
+
+
+For Linux:
+
+```shell
+docker run -p 3000:3000 -v "$(pwd):/app" -v /app/node_modules next-template
+```
+
+
+
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
